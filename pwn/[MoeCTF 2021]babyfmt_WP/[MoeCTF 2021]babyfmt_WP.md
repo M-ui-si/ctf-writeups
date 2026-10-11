@@ -11,7 +11,7 @@
 
 ![image01](/pwn/[MoeCTF%202021]babyfmt_WP/image/image01.png)
 
-checksec：有NX、canary保护，无PIE
+checksec：有NX 、canary保护，无PIE
 
 ## 二、分析
 
@@ -38,10 +38,14 @@ io.recvuntil("Hello,")
 leak = io.recvuntil("your passwd:")
 print(leak)
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/9ff84725a8c24af5abb46ca25065c680.png)
+
+![image03](/pwn/[MoeCTF%202021]babyfmt_WP/image/image03.png)
+
 参数偏移量为10
-#### exp
-```pyhton
+
+##### exp
+
+```python
 from pwn import *
 
 buf=0x804C044
