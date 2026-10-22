@@ -17,3 +17,4 @@ CTF writeups and security notes. Reverse engineering and Pwn focused. Continuous
 - [HNCTF 2022 Week1 fmtstrre](<pwn/[HNCTF 2022 Week1]fmtstrre/[HNCTF 2022 Week1]fmtstrre.md>)，格式化字符串
 - [MoeCTF 2022 babyfmt](<pwn/[MoeCTF 2022]babyfmt_WP/[MoeCTF 2022]babyfmt_WP.md>)，格式化字符串、GOT劫持
 - [MoeCTF 2021 babyfmt](<pwn/[MoeCTF 2021]babyfmt_WP/[MoeCTF 2021]babyfmt_WP.md>)，格式化字符串
+- [HNCTF 2022 Week1 ret2shellcode](<pwn/[HNCTF 2022 Week1]ret2shellcode_WP/[HNCTF 2022 Week1]ret2shellcode_WP.md>)，NX、ret2shellcode
